@@ -1,0 +1,90 @@
+\documentclass[10pt, a4paper]{article}
+% \documentclass[10pt, landscape, a4paper, twocolumn]{article}
+
+\setlength{\columnsep}{20pt}
+
+\usepackage[left=1.0cm, right=1.0cm, top=1.5cm, bottom=1.0cm, headsep=0.4cm]{geometry}
+\usepackage{kotex}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\usepackage{xcolor}
+
+\pagestyle{fancy}
+\fancyhead[R]{\thepage}
+\fancyhead[L]{SungKyunKwan University - ViVa La Vida}
+
+\setmonofont{CascadiaCode.ttf}
+% \setmainhangulfont{NanumMyeongjo}
+
+\definecolor{grey}{RGB}{162, 162, 162}
+
+\lstset{
+    basicstyle=\footnotesize\ttfamily,
+    breaklines=true,
+    breakindent=1.1em
+}
+
+\lstdefinestyle{mycpp}{
+  language=[GNU]C++,
+  keywordstyle=\color{blue},
+  commentstyle=\color{grey},
+  stringstyle=\color{orange},
+}
+
+
+
+\begin{document}
+\tableofcontents
+
+
+
+\section{Math}
+
+\subsection{Power}
+\lstinputlisting[style=mycpp]{C:/Users/Administrator/Desktop/Teamnote/math/power.cpp}
+
+\subsection{Extended Euclidean Algorithm}
+\lstinputlisting[style=mycpp]{C:/Users/Administrator/Desktop/Teamnote/math/extended_euclid.cpp}
+
+\subsection{Euler's Phi Function}
+\lstinputlisting[style=mycpp]{C:/Users/Administrator/Desktop/Teamnote/math/euler_phi.cpp}
+
+
+
+\section{String}
+
+\subsection{KMP}
+\lstinputlisting[style=mycpp]{C:/Users/Administrator/Desktop/Teamnote/string/kmp.cpp}
+
+
+
+\section{Data Structure}
+
+\subsection{Segment Tree}
+\lstinputlisting[style=mycpp]{C:/Users/Administrator/Desktop/Teamnote/data structure/segment_tree.cpp}
+
+
+
+\section{Graph}
+
+\subsection{DFS and BFS}
+\lstinputlisting[style=mycpp]{C:/Users/Administrator/Desktop/Teamnote/graph/dfs_bfs.cpp}
+
+\subsection{0-1 BFS}
+\lstinputlisting[style=mycpp]{C:/Users/Administrator/Desktop/Teamnote/graph/0-1bfs.cpp}
+
+\subsection{Bipartite Graph}
+\lstinputlisting[style=mycpp]{C:/Users/Administrator/Desktop/Teamnote/graph/bipartite_graph.cpp}
+
+\subsection{Union Find}
+\lstinputlisting[style=mycpp]{C:/Users/Administrator/Desktop/Teamnote/graph/union_find.cpp}
+
+\subsection{Dijkstra's Algorithm}
+\lstinputlisting[style=mycpp]{C:/Users/Administrator/Desktop/Teamnote/graph/dijkstra.cpp}
+
+\subsection{Floyd-Warshall Algorithm}
+\lstinputlisting[style=mycpp]{C:/Users/Administrator/Desktop/Teamnote/graph/floyd_warshall.cpp}
+
+
+\end{document}
